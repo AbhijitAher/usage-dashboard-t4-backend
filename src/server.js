@@ -5,5 +5,5 @@ const connect = require('./configs/db')
 app.listen(process.env.PORT, async () => {
     await connect()
 
-    console.log(`listening on port ${process.env.PORT}`)
+    // console.log(`listening on port ${process.env.PORT}`)
 })
