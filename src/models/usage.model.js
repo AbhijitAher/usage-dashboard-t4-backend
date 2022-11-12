@@ -14,3 +14,5 @@ const usageSchema = mongoose.Schema({
 })
 
 const Usage = mongoose.model('usage', usageSchema)
+
+module.exports = Usage

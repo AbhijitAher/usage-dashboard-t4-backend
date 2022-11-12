@@ -1,5 +1,5 @@
 const express = require('express');
-
+const usageController = require('./controllers/usage.controller')
 const app = express();
 
 app.use(express.json());
@@ -12,5 +12,7 @@ app.use((req, res, next) => {
     )
     next()
 })
+
+app.use('/usage', usageController )
 
 module.exports = app;
